@@ -1,0 +1,7 @@
+.container{
+    width: 300px;
+}
+
+.container input, button {
+    margin: 10px 0;
+}
