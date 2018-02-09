@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./server.component.css']
 })
 export class ServerComponent implements OnInit {
+  serverId = 10;
+  serverStatus;
 
-  constructor() { }
+  constructor() {
+    this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
+  }
+
+  getColor() {
+    return this.serverStatus === 'offline' ? 'green' : 'red';
+  }
 
   ngOnInit() {
   }
-
 }
