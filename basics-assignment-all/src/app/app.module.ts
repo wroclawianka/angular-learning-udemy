@@ -9,6 +9,9 @@ import { SuccessAlertComponent } from './components/success-alert/success-alert.
 import { WarningAlertComponent } from './components/warning-alert/warning-alert.component';
 import { BasicAssigment2Component } from './components/basic-assigment-2/basic-assigment-2.component';
 import { BasicAssigment3Component } from './components/basic-assigment-3/basic-assigment-3.component';
+import { ServerComponent } from './components/server/server.component';
+import { ServersComponent } from './components/servers/servers.component';
+import { ServersConsoleComponent } from './components/servers-console/servers-console.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { BasicAssigment3Component } from './components/basic-assigment-3/basic-a
     SuccessAlertComponent,
     WarningAlertComponent,
     BasicAssigment2Component,
-    BasicAssigment3Component
+    BasicAssigment3Component,
+    ServerComponent,
+    ServersComponent,
+    ServersConsoleComponent
   ],
   imports: [
     BrowserModule,
