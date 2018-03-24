@@ -13,6 +13,8 @@ import { ServerComponent } from './components//server-console-1/server/server.co
 import { ServersComponent } from './components/server-console-1//servers/servers.component';
 import { ServersConsoleComponent } from './components/server-console-1/servers-console/servers-console.component';
 import { ServerConsole2Component } from './components/server-console-2/server-console-2.component';
+import { CockpitComponent } from './components/server-console-2/cockpit/cockpit.component';
+import { ServerElementComponent } from './components/server-console-2/server-element/server-element.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { ServerConsole2Component } from './components/server-console-2/server-co
     ServersComponent,
     ServersConsoleComponent,
     ServerConsole2Component,
+    CockpitComponent,
+    ServerElementComponent,
   ],
   imports: [
     BrowserModule,
