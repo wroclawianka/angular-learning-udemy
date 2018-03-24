@@ -5,13 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { BasicAssigment1Component } from './components/basic-assigment-1/basic-assigment-1.component';
-import { SuccessAlertComponent } from './components/success-alert/success-alert.component';
-import { WarningAlertComponent } from './components/warning-alert/warning-alert.component';
+import { SuccessAlertComponent } from './components/basic-assigment-1/success-alert/success-alert.component';
+import { WarningAlertComponent } from './components/basic-assigment-1/warning-alert/warning-alert.component';
 import { BasicAssigment2Component } from './components/basic-assigment-2/basic-assigment-2.component';
 import { BasicAssigment3Component } from './components/basic-assigment-3/basic-assigment-3.component';
-import { ServerComponent } from './components/server/server.component';
-import { ServersComponent } from './components/servers/servers.component';
-import { ServersConsoleComponent } from './components/servers-console/servers-console.component';
+import { ServerComponent } from './components/servers-1/server/server.component';
+import { ServersComponent } from './components/servers-1/servers/servers.component';
+import { ServersConsoleComponent } from './components/servers-1/servers-console/servers-console.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { ServersConsoleComponent } from './components/servers-console/servers-co
     BasicAssigment3Component,
     ServerComponent,
     ServersComponent,
-    ServersConsoleComponent
+    ServersConsoleComponent,
   ],
   imports: [
     BrowserModule,
