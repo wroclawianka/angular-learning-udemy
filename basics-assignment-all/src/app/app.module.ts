@@ -15,6 +15,7 @@ import { ServersConsoleComponent } from './components/server-console-1/servers-c
 import { ServerConsole2Component } from './components/server-console-2/server-console-2.component';
 import { CockpitComponent } from './components/server-console-2/cockpit/cockpit.component';
 import { ServerElementComponent } from './components/server-console-2/server-element/server-element.component';
+import { AssigmentCmpDatabindingComponent } from './components/assigment-cmp-databinding/assigment-cmp-databinding.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ServerElementComponent } from './components/server-console-2/server-ele
     ServerConsole2Component,
     CockpitComponent,
     ServerElementComponent,
+    AssigmentCmpDatabindingComponent,
   ],
   imports: [
     BrowserModule,
