@@ -16,6 +16,9 @@ import { ServerConsole2Component } from './components/server-console-2/server-co
 import { CockpitComponent } from './components/server-console-2/cockpit/cockpit.component';
 import { ServerElementComponent } from './components/server-console-2/server-element/server-element.component';
 import { AssigmentCmpDatabindingComponent } from './components/assigment-cmp-databinding/assigment-cmp-databinding.component';
+import { GameControlComponent } from './components/assigment-cmp-databinding/game-control/game-control.component';
+import { OddComponent } from './components/assigment-cmp-databinding/odd/odd.component';
+import { EvenComponent } from './components/assigment-cmp-databinding/even/even.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,9 @@ import { AssigmentCmpDatabindingComponent } from './components/assigment-cmp-dat
     CockpitComponent,
     ServerElementComponent,
     AssigmentCmpDatabindingComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent,
   ],
   imports: [
     BrowserModule,
