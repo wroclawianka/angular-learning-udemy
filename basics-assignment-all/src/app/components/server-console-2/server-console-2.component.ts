@@ -23,4 +23,12 @@ export class ServerConsole2Component {
       content: blueprintData.blueprintContent
     });
   }
+
+  onChangeFirst(){
+    (this.serverElements.length > 0) ? this.serverElements[0].name = 'Changed' : console.log('No elements to change');
+  }
+
+  onDestroyFirst(){
+    this.serverElements.splice(0,1);
+  }
 }

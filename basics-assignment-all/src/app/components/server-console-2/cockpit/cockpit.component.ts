@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, ViewChild, ElementRef, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-cockpit',
@@ -11,7 +11,6 @@ export class CockpitComponent implements OnInit {
   @Output('bpCreated') blueprintCreated = new EventEmitter<{blueprintName: string, blueprintContent: string}>(); //alias
   // newServerName = '';
   // newServerContent = '';
-  
   //@ViewChild('selector') you can also access here component by @ViewChild(CockpitComponent)
   @ViewChild('serverContentInput') serverContentInput: ElementRef; 
 
