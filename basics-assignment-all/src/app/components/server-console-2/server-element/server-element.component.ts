@@ -11,7 +11,8 @@ import {
   AfterViewChecked, 
   OnDestroy, 
   ViewChild,
-  ElementRef
+  ElementRef,
+  ContentChild
  } from '@angular/core';
 // import { ViewEncapsulation } from '@angular/compiler/src/core';
 
@@ -36,11 +37,13 @@ OnDestroy {
   @Input('srvElement') element: {type: string, name: string, content: string};
   // alias used, which will be working outside of this component
   @ViewChild('heading') header: ElementRef;
+  @ContentChild('contentParagraph') paragraph: ElementRef;
 
   constructor() { }
 
   ngOnInit() {
     console.log(this.header.nativeElement.textContent); //empty, see ngAfterViewInit
+    console.log('Text Content pf paragraph: ' + this.paragraph.nativeElement.textContent);
   }
 
   ngOnChanges(changes : SimpleChanges) {  
@@ -53,6 +56,7 @@ OnDestroy {
 
   ngAfterContentInit(){
     console.log("ngAfterContentInit called")
+    console.log('Text Content pf paragraph: ' + this.paragraph.nativeElement.textContent);    
   }
 
   ngAfterContentChecked() {
