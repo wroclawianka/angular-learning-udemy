@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directives.component.css']
 })
 export class DirectivesComponent implements OnInit {
-  numbers = [1, 2, 3, 4, 5];
+  oddNumbers = [1, 3, 5];
+  evenNumbers = [2, 4, 6];
   onlyOdd = false;
 
   constructor() { }
@@ -14,4 +15,11 @@ export class DirectivesComponent implements OnInit {
   ngOnInit() {
   }
 
+
+
+  /* 
+  Directives:
+  - Attrbute d. - affects only the element they are added to 
+  - Structural d. - affects DOM, view container
+  */
 }
