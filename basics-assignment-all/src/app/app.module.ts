@@ -19,6 +19,7 @@ import { AssigmentCmpDatabindingComponent } from './components/assigment-cmp-dat
 import { GameControlComponent } from './components/assigment-cmp-databinding/game-control/game-control.component';
 import { OddComponent } from './components/assigment-cmp-databinding/odd/odd.component';
 import { EvenComponent } from './components/assigment-cmp-databinding/even/even.component';
+import { DirectivesComponent } from './components/directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { EvenComponent } from './components/assigment-cmp-databinding/even/even.
     GameControlComponent,
     OddComponent,
     EvenComponent,
+    DirectivesComponent,
   ],
   imports: [
     BrowserModule,
