@@ -18,14 +18,15 @@
             {{ number }}
           </li>
         </div>
-        <div *ngIf="!onlyOdd">
+        <!-- Commented to check our own "unless directive" -->
+        <!-- <div *ngIf="!onlyOdd">
           <li
           class="list-group-item"
           [ngClass]="{even: number % 2 == 0}"
           *ngFor="let number of evenNumbers">
           {{ number }}
         </li>
-      </div>
+      </div> -->
       <!-- star indicates that this is structural directive. there is no * in anguilar syntax - angular will transform them into sth else -->
       <!-- Example what will happen with div above: (You do not have to use it, but you should be aware of this) -->
       <!-- <ng-template [ngIf]="!onlyOdd">
@@ -36,6 +37,14 @@
           {{ number }}
         </li>
       </ng-template> -->
+       <div *appUnless="onlyOdd">
+          <li
+          class="list-group-item"
+          [ngClass]="{even: number % 2 == 0}"
+          *ngFor="let number of evenNumbers">
+          {{ number }}
+        </li>
+      </div>
       </ul>
         <p appBasicHighlight>Style me with basic directive!</p>
         <p>Done with <a href="https://angular.io/api/core/Renderer2">Renderer2</a>: </p>

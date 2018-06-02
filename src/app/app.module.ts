@@ -22,6 +22,7 @@ import { EvenComponent } from './components/assigment-cmp-databinding/even/even.
 import { DirectivesComponent } from './components/directives/directives.component';
 import { BasicHighlightDirective } from './components/directives/basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirective } from './components/directives/better-highlight/better-highlight.directive';
+import { UnlessDirective } from './components/directives/unless.directive';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { BetterHighlightDirective } from './components/directives/better-highlig
     DirectivesComponent,
     BasicHighlightDirective,
     BetterHighlightDirective,
+    UnlessDirective,
   ],
   imports: [
     BrowserModule,
