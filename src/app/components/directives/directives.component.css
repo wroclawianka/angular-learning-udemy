@@ -1,5 +1,8 @@
+.header{
+    text-align: center;
+}
+
 .container {
-    margin-top: 30px;
     width: 100%;
   }  
 
@@ -9,4 +12,9 @@
 
   .even {
     color: green;
+}
+
+a{
+    color: initial;
+    text-decoration: underline;
 }
