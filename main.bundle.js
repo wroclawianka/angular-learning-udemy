@@ -27,7 +27,7 @@ module.exports = ".excercise {\r\n    border: 1px solid gray;\r\n    padding: 1.
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div class=\"row excercise\" id=\"server-console\">\r\n        <app-servers-2></app-servers-2>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"server-console\">\r\n        <app-servers-1></app-servers-1>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-1\">\r\n        <app-basic-assigment-1></app-basic-assigment-1>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-2\">\r\n        <app-basic-assigment-2></app-basic-assigment-2>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-3\">\r\n        <app-basic-assigment-3></app-basic-assigment-3>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"assigment-cmp-databinding\">\r\n        <app-assigment-cmp-databinding></app-assigment-cmp-databinding>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <div class=\"row excercise\" id=\"directives\">\r\n        <app-directives></app-directives>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"server-console\">\r\n        <app-servers-2></app-servers-2>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"server-console\">\r\n        <app-servers-1></app-servers-1>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-1\">\r\n        <app-basic-assigment-1></app-basic-assigment-1>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-2\">\r\n        <app-basic-assigment-2></app-basic-assigment-2>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-3\">\r\n        <app-basic-assigment-3></app-basic-assigment-3>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"assigment-cmp-databinding\">\r\n        <app-assigment-cmp-databinding></app-assigment-cmp-databinding>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -86,12 +86,16 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_assigment_cmp_databinding_game_control_game_control_component__ = __webpack_require__("./src/app/components/assigment-cmp-databinding/game-control/game-control.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_assigment_cmp_databinding_odd_odd_component__ = __webpack_require__("./src/app/components/assigment-cmp-databinding/odd/odd.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_assigment_cmp_databinding_even_even_component__ = __webpack_require__("./src/app/components/assigment-cmp-databinding/even/even.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_directives_directives_component__ = __webpack_require__("./src/app/components/directives/directives.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_directives_basic_highlight_basic_highlight_directive__ = __webpack_require__("./src/app/components/directives/basic-highlight/basic-highlight.directive.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -134,6 +138,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_17__components_assigment_cmp_databinding_game_control_game_control_component__["a" /* GameControlComponent */],
                 __WEBPACK_IMPORTED_MODULE_18__components_assigment_cmp_databinding_odd_odd_component__["a" /* OddComponent */],
                 __WEBPACK_IMPORTED_MODULE_19__components_assigment_cmp_databinding_even_even_component__["a" /* EvenComponent */],
+                __WEBPACK_IMPORTED_MODULE_20__components_directives_directives_component__["a" /* DirectivesComponent */],
+                __WEBPACK_IMPORTED_MODULE_21__components_directives_basic_highlight_basic_highlight_directive__["a" /* BasicHighlightDirective */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -161,7 +167,7 @@ module.exports = ".odd {\r\n    color: purple;\r\n}\r\n\r\n.even {\r\n    color:
 /***/ "./src/app/components/assigment-cmp-databinding/assigment-cmp-databinding.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"answer\">\n    <div class=\"col-xs-5\">\n        <h4>Assigment 4 - Databinding</h4>\n        <app-game-control (intervalFired)=\"onIntervalFired($event)\"></app-game-control>\n        <div class=\"col-xs-3\">\n            <app-odd *ngFor=\"let oddNumber of oddNumbers\">\n                <p class=\"odd\">{{ oddNumber }} is odd</p>\n            </app-odd>\n        </div>\n        <div class=\"col-xs-3\">\n            <app-even *ngFor=\"let evenNumber of evenNumbers\">\n                <p class=\"even\">{{ evenNumber }} is even</p>\n            </app-even>\n        </div>\n    </div>\n    <div class=\"col-xs-7\">\n        <h3>Bind it!</h3>\n        <ol>\n            <li>Create three new components: GameControl, Odd and Even</li>\n            <li>The GameControl Component should have buttons to start and stop the game</li>\n            <li>When starting the game, an event (holding a incrementing number) should get emitted each second (ref = setInterval())</li>\n            <li>The event should be listenable from outside the component</li>\n            <li>When stopping the game, no more events should get emitted (clearInterval(ref))</li>\n            <li>A new Odd component should get created for every odd number emitted, the same should happen for the Even Component (on even numbers)</li>\n            <li>Simply output Odd - NUMBER or Even - NUMBER in the two components</li>\n            <li>Style the element (e.g. paragraph) holding your output text differently in both components</li>\n        </ol>\n    </div>\n</div>"
+module.exports = "<div class=\"answer\">\r\n    <div class=\"col-xs-5\">\r\n        <h4>Assigment 4 - Databinding</h4>\r\n        <app-game-control (intervalFired)=\"onIntervalFired($event)\"></app-game-control>\r\n        <div class=\"col-xs-3\">\r\n            <app-odd *ngFor=\"let oddNumber of oddNumbers\">\r\n                <p class=\"odd\">{{ oddNumber }} is odd</p>\r\n            </app-odd>\r\n        </div>\r\n        <div class=\"col-xs-3\">\r\n            <app-even *ngFor=\"let evenNumber of evenNumbers\">\r\n                <p class=\"even\">{{ evenNumber }} is even</p>\r\n            </app-even>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-xs-7\">\r\n        <h3>Bind it!</h3>\r\n        <ol>\r\n            <li>Create three new components: GameControl, Odd and Even</li>\r\n            <li>The GameControl Component should have buttons to start and stop the game</li>\r\n            <li>When starting the game, an event (holding a incrementing number) should get emitted each second (ref = setInterval())</li>\r\n            <li>The event should be listenable from outside the component</li>\r\n            <li>When stopping the game, no more events should get emitted (clearInterval(ref))</li>\r\n            <li>A new Odd component should get created for every odd number emitted, the same should happen for the Even Component (on even numbers)</li>\r\n            <li>Simply output Odd - NUMBER or Even - NUMBER in the two components</li>\r\n            <li>Style the element (e.g. paragraph) holding your output text differently in both components</li>\r\n        </ol>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -271,7 +277,7 @@ module.exports = "button {\r\n    width: 80px;\r\n    margin: 10px;\r\n}"
 /***/ "./src/app/components/assigment-cmp-databinding/game-control/game-control.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"buttons\">\n    <button class=\"btn btn-primary start\" (click)=\"onStart()\">Start</button>\n    <button class=\"btn btn-danger stop\" (click)=\"onStop()\">Stop</button>\n</div>"
+module.exports = "<div class=\"buttons\">\r\n    <button class=\"btn btn-primary start\" (click)=\"onStart()\">Start</button>\r\n    <button class=\"btn btn-danger stop\" (click)=\"onStop()\">Stop</button>\r\n</div>"
 
 /***/ }),
 
@@ -637,6 +643,96 @@ var BasicAssigment3Component = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/directives/basic-highlight/basic-highlight.directive.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BasicHighlightDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BasicHighlightDirective = /** @class */ (function () {
+    function BasicHighlightDirective(elementRef) {
+        this.elementRef = elementRef;
+    }
+    // thanks to "private", which is TS shortcut in this case we will have value assign to the property (85, 4:00)
+    BasicHighlightDirective.prototype.ngOnInit = function () {
+        this.elementRef.nativeElement.style.backgroundColor = 'greenyellow';
+    };
+    BasicHighlightDirective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* Directive */])({
+            selector: '[appBasicHighlight]'
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
+    ], BasicHighlightDirective);
+    return BasicHighlightDirective;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/directives/directives.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ".container {\r\n    margin-top: 30px;\r\n    width: 100%;\r\n  }  \r\n\r\n  .odd {\r\n      color: red;\r\n  }  \r\n\r\n  .even {\r\n    color: green;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/components/directives/directives.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n    <div class=\"row\">\r\n      <div class=\"col-xs-12\">\r\n        <button\r\n          class=\"btn btn-primary\"\r\n          (click)=\"onlyOdd = !onlyOdd\">Only show odd numbers</button>\r\n        <br><br>\r\n        <ul class=\"list-group\">\r\n          <div *ngIf=\"onlyOdd\">\r\n            <li\r\n            class=\"list-group-item\"\r\n            [ngClass]=\"{odd: number % 2 !== 0}\"\r\n            [ngStyle]=\"{backgroundColor: number % 2 !== 0 ? 'yellow' : 'transparent'}\"\r\n            *ngFor=\"let number of oddNumbers\">\r\n            {{ number }}\r\n          </li>\r\n        </div>\r\n        <div *ngIf=\"!onlyOdd\">\r\n          <li\r\n          class=\"list-group-item\"\r\n          [ngClass]=\"{even: number % 2 == 0}\"\r\n          *ngFor=\"let number of evenNumbers\">\r\n          {{ number }}\r\n        </li>\r\n      </div>\r\n        </ul>\r\n        <p appBasicHighlight>Style me with basic directive!</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  "
+
+/***/ }),
+
+/***/ "./src/app/components/directives/directives.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DirectivesComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var DirectivesComponent = /** @class */ (function () {
+    function DirectivesComponent() {
+        this.oddNumbers = [1, 3, 5];
+        this.evenNumbers = [2, 4, 6];
+        this.onlyOdd = false;
+    }
+    DirectivesComponent.prototype.ngOnInit = function () {
+    };
+    DirectivesComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'app-directives',
+            template: __webpack_require__("./src/app/components/directives/directives.component.html"),
+            styles: [__webpack_require__("./src/app/components/directives/directives.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], DirectivesComponent);
+    return DirectivesComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/server-console-1/server/server.component.css":
 /***/ (function(module, exports) {
 
@@ -824,7 +920,7 @@ module.exports = ""
 /***/ "./src/app/components/server-console-2/cockpit/cockpit.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <p>Add new Servers or blueprints!</p>\n        <label>Server Name</label>\n        <!-- <input type=\"text\" class=\"form-control\" [(ngModel)]=\"newServerName\"> -->\n        <!-- local reference - Note: you can use it only in the template, in HTML code,  not in your ts code -->\n        <!-- #serverNameInput - will hold reference to this element with all its properties -->\n        <input type=\"text\" class=\"form-control\" #serverNameInput>\n        <label>Server Content</label>\n        <!-- <input type=\"text\" class=\"form-control\" [(ngModel)]=\"newServerContent\"> -->\n        <input type=\"text\" class=\"form-control\" #serverContentInput>\n        <br>\n        <button class=\"btn btn-primary\" (click)=\"onAddServer(serverNameInput)\">Add Server</button>\n        <button class=\"btn btn-primary\" (click)=\"onAddBlueprint(serverNameInput)\">Add Server Blueprint</button>\n    </div>\n</div>"
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-xs-12\">\r\n        <p>Add new Servers or blueprints!</p>\r\n        <label>Server Name</label>\r\n        <!-- <input type=\"text\" class=\"form-control\" [(ngModel)]=\"newServerName\"> -->\r\n        <!-- local reference - Note: you can use it only in the template, in HTML code,  not in your ts code -->\r\n        <!-- #serverNameInput - will hold reference to this element with all its properties -->\r\n        <input type=\"text\" class=\"form-control\" #serverNameInput>\r\n        <label>Server Content</label>\r\n        <!-- <input type=\"text\" class=\"form-control\" [(ngModel)]=\"newServerContent\"> -->\r\n        <input type=\"text\" class=\"form-control\" #serverContentInput>\r\n        <br>\r\n        <button class=\"btn btn-primary\" (click)=\"onAddServer(serverNameInput)\">Add Server</button>\r\n        <button class=\"btn btn-primary\" (click)=\"onAddBlueprint(serverNameInput)\">Add Server Blueprint</button>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -899,7 +995,7 @@ module.exports = ".container {\r\n    margin-top: 30px;\r\n}\r\n\r\np {\r\n    c
 /***/ "./src/app/components/server-console-2/server-console-2.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <app-cockpit (serverCreated)=\"onServerAdded($event)\" (bpCreated)=\"onBlueprintAdded($event)\"></app-cockpit>\n    <hr>\n    <div class=\"row\">\n        <div class=\"col-xs-12\">\n            <button class=\"btn btn-primary\" (click)=\"onChangeFirst()\">Change first element</button>\n            <button class=\"btn btn-danger\" (click)=\"onDestroyFirst()\">Destroy first element</button>\n            <app-server-element *ngFor=\"let serverElement of serverElements\" [srvElement]=\"serverElement\">\n                <p #contentParagraph>\n                    <strong *ngIf=\"serverElement.type === 'server'\" style=\"color: red\">{{ serverElement.content }}</strong>\n                    <em *ngIf=\"serverElement.type === 'blueprint'\" style=\"color: blue\">{{ serverElement.content }}</em>\n                </p>\n            </app-server-element>\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"container\">\r\n    <app-cockpit (serverCreated)=\"onServerAdded($event)\" (bpCreated)=\"onBlueprintAdded($event)\"></app-cockpit>\r\n    <hr>\r\n    <div class=\"row\">\r\n        <div class=\"col-xs-12\">\r\n            <button class=\"btn btn-primary\" (click)=\"onChangeFirst()\">Change first element</button>\r\n            <button class=\"btn btn-danger\" (click)=\"onDestroyFirst()\">Destroy first element</button>\r\n            <app-server-element *ngFor=\"let serverElement of serverElements\" [srvElement]=\"serverElement\">\r\n                <p #contentParagraph>\r\n                    <strong *ngIf=\"serverElement.type === 'server'\" style=\"color: red\">{{ serverElement.content }}</strong>\r\n                    <em *ngIf=\"serverElement.type === 'blueprint'\" style=\"color: blue\">{{ serverElement.content }}</em>\r\n                </p>\r\n            </app-server-element>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -964,7 +1060,7 @@ module.exports = ""
 /***/ "./src/app/components/server-console-2/server-element/server-element.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"panel panel-default\">\n    <div class=\"panel-heading\" #heading>{{ element.name }}</div>\n    <div class=\"panel-body\">\n        <!-- directive - to mark a place for the content. The content is placed in server-console-2 -->\n        <ng-content></ng-content>\n    </div>\n</div>"
+module.exports = "<div class=\"panel panel-default\">\r\n    <div class=\"panel-heading\" #heading>{{ element.name }}</div>\r\n    <div class=\"panel-body\">\r\n        <!-- directive - to mark a place for the content. The content is placed in server-console-2 -->\r\n        <ng-content></ng-content>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
