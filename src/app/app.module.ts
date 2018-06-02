@@ -21,6 +21,7 @@ import { OddComponent } from './components/assigment-cmp-databinding/odd/odd.com
 import { EvenComponent } from './components/assigment-cmp-databinding/even/even.component';
 import { DirectivesComponent } from './components/directives/directives.component';
 import { BasicHighlightDirective } from './components/directives/basic-highlight/basic-highlight.directive';
+import { BetterHighlightDirective } from './components/directives/better-highlight/better-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { BasicHighlightDirective } from './components/directives/basic-highlight
     EvenComponent,
     DirectivesComponent,
     BasicHighlightDirective,
+    BetterHighlightDirective,
   ],
   imports: [
     BrowserModule,
