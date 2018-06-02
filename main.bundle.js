@@ -20,14 +20,14 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /***/ "./src/app/app.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".excercise {\r\n    border: 1px solid gray;\r\n    padding: 1.5em 0.7em;\r\n    margin: 1.5em 0;\r\n}"
+module.exports = ".intro{\r\n    text-align: center;\r\n}\r\n\r\n.intro a{\r\n    color: initial;\r\n}\r\n\r\n.excercise {\r\n    border: 1px solid gray;\r\n    padding: 1.5em 0.7em;\r\n    margin: 1.5em 0;\r\n}"
 
 /***/ }),
 
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div class=\"row excercise\" id=\"directives\">\r\n        <app-directives></app-directives>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"server-console\">\r\n        <app-servers-2></app-servers-2>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"server-console\">\r\n        <app-servers-1></app-servers-1>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-1\">\r\n        <app-basic-assigment-1></app-basic-assigment-1>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-2\">\r\n        <app-basic-assigment-2></app-basic-assigment-2>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-3\">\r\n        <app-basic-assigment-3></app-basic-assigment-3>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"assigment-cmp-databinding\">\r\n        <app-assigment-cmp-databinding></app-assigment-cmp-databinding>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <div class=\"intro\">\r\n        <h1>Angular 6 Excercises</h1>\r\n        <h4> Udemy, <a href=\"https://www.udemy.com/the-complete-guide-to-angular-2\">Angular 6 - The Complete Guide</a></h4>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"directives\">\r\n        <app-directives></app-directives>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"server-console\">\r\n        <app-servers-2></app-servers-2>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"server-console\">\r\n        <app-servers-1></app-servers-1>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-1\">\r\n        <app-basic-assigment-1></app-basic-assigment-1>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-2\">\r\n        <app-basic-assigment-2></app-basic-assigment-2>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-3\">\r\n        <app-basic-assigment-3></app-basic-assigment-3>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"assigment-cmp-databinding\">\r\n        <app-assigment-cmp-databinding></app-assigment-cmp-databinding>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -88,6 +88,8 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_assigment_cmp_databinding_even_even_component__ = __webpack_require__("./src/app/components/assigment-cmp-databinding/even/even.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_directives_directives_component__ = __webpack_require__("./src/app/components/directives/directives.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_directives_basic_highlight_basic_highlight_directive__ = __webpack_require__("./src/app/components/directives/basic-highlight/basic-highlight.directive.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_directives_better_highlight_better_highlight_directive__ = __webpack_require__("./src/app/components/directives/better-highlight/better-highlight.directive.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_directives_unless_directive__ = __webpack_require__("./src/app/components/directives/unless.directive.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -116,11 +118,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["F" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["H" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_5__components_basic_assigment_1_basic_assigment_1_component__["a" /* BasicAssigment1Component */],
@@ -140,6 +144,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_19__components_assigment_cmp_databinding_even_even_component__["a" /* EvenComponent */],
                 __WEBPACK_IMPORTED_MODULE_20__components_directives_directives_component__["a" /* DirectivesComponent */],
                 __WEBPACK_IMPORTED_MODULE_21__components_directives_basic_highlight_basic_highlight_directive__["a" /* BasicHighlightDirective */],
+                __WEBPACK_IMPORTED_MODULE_22__components_directives_better_highlight_better_highlight_directive__["a" /* BetterHighlightDirective */],
+                __WEBPACK_IMPORTED_MODULE_23__components_directives_unless_directive__["a" /* UnlessDirective */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -315,7 +321,7 @@ var GameControlComponent = /** @class */ (function () {
         clearInterval(this.interval);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* Output */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Output */])(),
         __metadata("design:type", Object)
     ], GameControlComponent.prototype, "intervalFired", void 0);
     GameControlComponent = __decorate([
@@ -680,17 +686,92 @@ var BasicHighlightDirective = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/directives/better-highlight/better-highlight.directive.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BetterHighlightDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BetterHighlightDirective = /** @class */ (function () {
+    // () - to which property of the emelent you want to bind
+    // Camel case is important here as we accessing DOM property which does not know dashes
+    function BetterHighlightDirective(elRef, renderer) {
+        this.elRef = elRef;
+        this.renderer = renderer;
+        this.defaultColor = 'transparent';
+        // @Input() highlightColor: string = 'blue';
+        this.highlightColor = 'blue';
+    }
+    BetterHighlightDirective.prototype.ngOnInit = function () {
+        this.backgroundColor = this.defaultColor; // to prevent white at the beginning, which happens as property is not set yet. 
+    };
+    BetterHighlightDirective.prototype.mouseover = function (eventData) {
+        // this.renderer.setStyle(this.elRef.nativeElement, 'background-color', 'blue') 
+        // Renderer in not wrong usage, but not more needed in this example 
+        this.backgroundColor = this.highlightColor;
+    };
+    BetterHighlightDirective.prototype.mouseleave = function (eventData) {
+        // this.renderer.setStyle(this.elRef.nativeElement, 'background-color', 'transparent')  
+        this.backgroundColor = this.defaultColor;
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Input */])(),
+        __metadata("design:type", String)
+    ], BetterHighlightDirective.prototype, "defaultColor", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Input */])('appBetterHighlight'),
+        __metadata("design:type", String)
+    ], BetterHighlightDirective.prototype, "highlightColor", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* HostBinding */])('style.backgroundColor'),
+        __metadata("design:type", String)
+    ], BetterHighlightDirective.prototype, "backgroundColor", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* HostListener */])('mouseenter'),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Event]),
+        __metadata("design:returntype", void 0)
+    ], BetterHighlightDirective.prototype, "mouseover", null);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* HostListener */])('mouseleave'),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Event]),
+        __metadata("design:returntype", void 0)
+    ], BetterHighlightDirective.prototype, "mouseleave", null);
+    BetterHighlightDirective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* Directive */])({
+            selector: '[appBetterHighlight]'
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Renderer2 */]])
+    ], BetterHighlightDirective);
+    return BetterHighlightDirective;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/directives/directives.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".container {\r\n    margin-top: 30px;\r\n    width: 100%;\r\n  }  \r\n\r\n  .odd {\r\n      color: red;\r\n  }  \r\n\r\n  .even {\r\n    color: green;\r\n}"
+module.exports = ".header{\r\n    text-align: center;\r\n}\r\n\r\n.container {\r\n    width: 100%;\r\n  }\r\n\r\n.odd {\r\n      color: red;\r\n  }\r\n\r\n.even {\r\n    color: green;\r\n}\r\n\r\na{\r\n    color: initial;\r\n    text-decoration: underline;\r\n}"
 
 /***/ }),
 
 /***/ "./src/app/components/directives/directives.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div class=\"row\">\r\n      <div class=\"col-xs-12\">\r\n        <button\r\n          class=\"btn btn-primary\"\r\n          (click)=\"onlyOdd = !onlyOdd\">Only show odd numbers</button>\r\n        <br><br>\r\n        <ul class=\"list-group\">\r\n          <div *ngIf=\"onlyOdd\">\r\n            <li\r\n            class=\"list-group-item\"\r\n            [ngClass]=\"{odd: number % 2 !== 0}\"\r\n            [ngStyle]=\"{backgroundColor: number % 2 !== 0 ? 'yellow' : 'transparent'}\"\r\n            *ngFor=\"let number of oddNumbers\">\r\n            {{ number }}\r\n          </li>\r\n        </div>\r\n        <div *ngIf=\"!onlyOdd\">\r\n          <li\r\n          class=\"list-group-item\"\r\n          [ngClass]=\"{even: number % 2 == 0}\"\r\n          *ngFor=\"let number of evenNumbers\">\r\n          {{ number }}\r\n        </li>\r\n      </div>\r\n        </ul>\r\n        <p appBasicHighlight>Style me with basic directive!</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  "
+module.exports = "<div class=\"container\">\r\n  <div class=\"header\">\r\n    <h2>Directives</h2>\r\n  </div>\r\n    <div class=\"row\">\r\n      <div class=\"col-xs-12\">\r\n        <button\r\n          class=\"btn btn-primary\"\r\n          (click)=\"onlyOdd = !onlyOdd\">Only show odd numbers</button>\r\n        <br><br>\r\n        <ul class=\"list-group\">\r\n          <div *ngIf=\"onlyOdd\">\r\n            <li\r\n            class=\"list-group-item\"\r\n            [ngClass]=\"{odd: number % 2 !== 0}\"\r\n            [ngStyle]=\"{backgroundColor: number % 2 !== 0 ? 'yellow' : 'transparent'}\"\r\n            *ngFor=\"let number of oddNumbers\">\r\n            {{ number }}\r\n          </li>\r\n        </div>\r\n        <!-- Commented to check our own \"unless directive\" -->\r\n        <!-- <div *ngIf=\"!onlyOdd\">\r\n          <li\r\n          class=\"list-group-item\"\r\n          [ngClass]=\"{even: number % 2 == 0}\"\r\n          *ngFor=\"let number of evenNumbers\">\r\n          {{ number }}\r\n        </li>\r\n      </div> -->\r\n      <!-- star indicates that this is structural directive. there is no * in anguilar syntax - angular will transform them into sth else -->\r\n      <!-- Example what will happen with div above: (You do not have to use it, but you should be aware of this) -->\r\n      <!-- <ng-template [ngIf]=\"!onlyOdd\">\r\n          <li\r\n          class=\"list-group-item\"\r\n          [ngClass]=\"{even: number % 2 == 0}\"\r\n          *ngFor=\"let number of evenNumbers\">\r\n          {{ number }}\r\n        </li>\r\n      </ng-template> -->\r\n       <div *appUnless=\"onlyOdd\">\r\n          <li\r\n          class=\"list-group-item\"\r\n          [ngClass]=\"{even: number % 2 == 0}\"\r\n          *ngFor=\"let number of evenNumbers\">\r\n          {{ number }}\r\n        </li>\r\n      </div>\r\n      </ul>\r\n        <p appBasicHighlight>Style me with basic directive!</p>\r\n        <p>Done with <a href=\"https://angular.io/api/core/Renderer2\">Renderer2</a>: </p>\r\n        <p [appBetterHighlight]=\"'red'\" defaultColor=\"yellow\">Style me with basic directive! (mouse over)</p>\r\n        <!-- [appBetterHighlight]=\"'red'\" is an alias which you may use, but you don't have too. You may use [highlightColor]=\"'red'\" at is was before used here. Chck what is set in @Input()!-->\r\n        <!-- You can aso replace defaultColor=\"yellow\" with [defaultColor]=\"'yellow'\", but remember about the single quotation mark -->\r\n        <div [ngSwitch]=\"value\">\r\n          <p>ngSwitch: </p>\r\n          <div *ngSwitchCase=\"5\">Value is 5</div>\r\n          <div *ngSwitchCase=\"10\">Value is 10</div>\r\n          <div *ngSwitchCase=\"100\">Value is 100</div>\r\n          <div *ngSwitchDefault>Value is default</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  "
 
 /***/ }),
 
@@ -715,6 +796,7 @@ var DirectivesComponent = /** @class */ (function () {
         this.oddNumbers = [1, 3, 5];
         this.evenNumbers = [2, 4, 6];
         this.onlyOdd = false;
+        this.value = 5;
     }
     DirectivesComponent.prototype.ngOnInit = function () {
     };
@@ -727,6 +809,61 @@ var DirectivesComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], DirectivesComponent);
     return DirectivesComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/directives/unless.directive.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UnlessDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var UnlessDirective = /** @class */ (function () {
+    function UnlessDirective(templateRef, vcRef) {
+        this.templateRef = templateRef;
+        this.vcRef = vcRef;
+    }
+    Object.defineProperty(UnlessDirective.prototype, "appUnless", {
+        // unless - directive is oposite of ngIf 
+        set: function (condition) {
+            // still a property, but with setter,
+            // the name should be the same as selector
+            if (!condition) {
+                this.vcRef.createEmbeddedView(this.templateRef);
+            }
+            else {
+                this.vcRef.clear();
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ;
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Input */])(),
+        __metadata("design:type", Boolean),
+        __metadata("design:paramtypes", [Boolean])
+    ], UnlessDirective.prototype, "appUnless", null);
+    UnlessDirective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* Directive */])({
+            selector: '[appUnless]'
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* TemplateRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* ViewContainerRef */]])
+    ], UnlessDirective);
+    return UnlessDirective;
 }());
 
 
@@ -959,15 +1096,15 @@ var CockpitComponent = /** @class */ (function () {
         this.blueprintCreated.emit({ blueprintName: nameInput.value, blueprintContent: this.serverContentInput.nativeElement.value });
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* Output */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Output */])(),
         __metadata("design:type", Object)
     ], CockpitComponent.prototype, "serverCreated", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* Output */])('bpCreated'),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Output */])('bpCreated'),
         __metadata("design:type", Object)
     ], CockpitComponent.prototype, "blueprintCreated", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* ViewChild */])('serverContentInput'),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* ViewChild */])('serverContentInput'),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */])
     ], CockpitComponent.prototype, "serverContentInput", void 0);
     CockpitComponent = __decorate([
@@ -1112,11 +1249,11 @@ var ServerElementComponent = /** @class */ (function () {
         console.log("element destroyed");
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Input */])('srvElement'),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Input */])('srvElement'),
         __metadata("design:type", Object)
     ], ServerElementComponent.prototype, "element", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* ViewChild */])('heading'),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* ViewChild */])('heading'),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */])
     ], ServerElementComponent.prototype, "header", void 0);
     __decorate([
@@ -1164,7 +1301,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
