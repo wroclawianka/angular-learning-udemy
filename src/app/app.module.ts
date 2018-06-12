@@ -67,7 +67,6 @@ import { UsersService } from './components/services-assigment/services/users.ser
     FormsModule,
     HttpModule
   ],
-  providers: [AccountsService, LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
