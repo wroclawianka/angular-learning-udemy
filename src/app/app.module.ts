@@ -28,6 +28,10 @@ import { AccountComponent } from './components/services/account/account.componen
 import { NewAccountComponent } from './components/services/new-account/new-account.component';
 import { AccountsService } from './components/services/accounts.service';
 import { LoggingService } from './components/services/logging.service';
+import { ServicesAssigmentComponent } from './components/services-assigment/services-assigment.component';
+import { ActiveUsersComponent } from './components/services-assigment/active-users/active-users.component';
+import { InactiveUsersComponent } from './components/services-assigment/inactive-users/inactive-users.component';
+import { UsersService } from './components/services-assigment/services/users.service';
 
 @NgModule({
   declarations: [
@@ -54,6 +58,9 @@ import { LoggingService } from './components/services/logging.service';
     ServicesComponent,
     AccountComponent,
     NewAccountComponent,
+    ServicesAssigmentComponent,
+    ActiveUsersComponent,
+    InactiveUsersComponent,
   ],
   imports: [
     BrowserModule,
