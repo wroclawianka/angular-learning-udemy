@@ -1,6 +1,8 @@
 <div class="answer">
+    <div [ngStyle]="{'text-align': 'center', 'margin-bottom': '2em'}">
+        <h2>Assigment 4. Databinding</h2>
+    </div>
     <div class="col-xs-5">
-        <h4>Assigment 4 - Databinding</h4>
         <app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
         <div class="col-xs-3">
             <app-odd *ngFor="let oddNumber of oddNumbers">
