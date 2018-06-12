@@ -27,7 +27,7 @@ module.exports = ".intro{\r\n    text-align: center;\r\n}\r\n\r\n.intro a{\r\n  
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div class=\"intro\">\r\n        <h1>Angular 6 Excercises</h1>\r\n        <h4> Udemy, <a href=\"https://www.udemy.com/the-complete-guide-to-angular-2\">Angular 6 - The Complete Guide</a></h4>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"directives\">\r\n        <app-directives></app-directives>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"server-console\">\r\n        <app-servers-2></app-servers-2>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"server-console\">\r\n        <app-servers-1></app-servers-1>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-1\">\r\n        <app-basic-assigment-1></app-basic-assigment-1>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-2\">\r\n        <app-basic-assigment-2></app-basic-assigment-2>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-3\">\r\n        <app-basic-assigment-3></app-basic-assigment-3>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"assigment-cmp-databinding\">\r\n        <app-assigment-cmp-databinding></app-assigment-cmp-databinding>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <div class=\"intro\">\r\n        <h1>Angular 6 Excercises</h1>\r\n        <h4> Udemy, <a href=\"https://www.udemy.com/the-complete-guide-to-angular-2\">Angular 6 - The Complete Guide</a></h4>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"services\">\r\n        <app-services-assigment></app-services-assigment>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"services\">\r\n        <app-services></app-services>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"directives\">\r\n        <app-directives></app-directives>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"server-console\">\r\n        <app-servers-2></app-servers-2>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"server-console\">\r\n        <app-servers-1></app-servers-1>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"assigment-cmp-databinding\">\r\n        <app-assigment-cmp-databinding></app-assigment-cmp-databinding>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-3\">\r\n        <app-basic-assigment-3></app-basic-assigment-3>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-2\">\r\n        <app-basic-assigment-2></app-basic-assigment-2>\r\n    </div>\r\n    <div class=\"row excercise\" id=\"basic-assigment-1\">\r\n        <app-basic-assigment-1></app-basic-assigment-1>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -90,12 +90,24 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_directives_basic_highlight_basic_highlight_directive__ = __webpack_require__("./src/app/components/directives/basic-highlight/basic-highlight.directive.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_directives_better_highlight_better_highlight_directive__ = __webpack_require__("./src/app/components/directives/better-highlight/better-highlight.directive.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_directives_unless_directive__ = __webpack_require__("./src/app/components/directives/unless.directive.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_services_services_component__ = __webpack_require__("./src/app/components/services/services.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_services_account_account_component__ = __webpack_require__("./src/app/components/services/account/account.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_services_new_account_new_account_component__ = __webpack_require__("./src/app/components/services/new-account/new-account.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_services_assigment_services_assigment_component__ = __webpack_require__("./src/app/components/services-assigment/services-assigment.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_services_assigment_active_users_active_users_component__ = __webpack_require__("./src/app/components/services-assigment/active-users/active-users.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_services_assigment_inactive_users_inactive_users_component__ = __webpack_require__("./src/app/components/services-assigment/inactive-users/inactive-users.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+
 
 
 
@@ -146,13 +158,18 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_21__components_directives_basic_highlight_basic_highlight_directive__["a" /* BasicHighlightDirective */],
                 __WEBPACK_IMPORTED_MODULE_22__components_directives_better_highlight_better_highlight_directive__["a" /* BetterHighlightDirective */],
                 __WEBPACK_IMPORTED_MODULE_23__components_directives_unless_directive__["a" /* UnlessDirective */],
+                __WEBPACK_IMPORTED_MODULE_24__components_services_services_component__["a" /* ServicesComponent */],
+                __WEBPACK_IMPORTED_MODULE_25__components_services_account_account_component__["a" /* AccountComponent */],
+                __WEBPACK_IMPORTED_MODULE_26__components_services_new_account_new_account_component__["a" /* NewAccountComponent */],
+                __WEBPACK_IMPORTED_MODULE_27__components_services_assigment_services_assigment_component__["a" /* ServicesAssigmentComponent */],
+                __WEBPACK_IMPORTED_MODULE_28__components_services_assigment_active_users_active_users_component__["a" /* ActiveUsersComponent */],
+                __WEBPACK_IMPORTED_MODULE_29__components_services_assigment_inactive_users_inactive_users_component__["a" /* InactiveUsersComponent */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */]
             ],
-            providers: [],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -173,7 +190,7 @@ module.exports = ".odd {\r\n    color: purple;\r\n}\r\n\r\n.even {\r\n    color:
 /***/ "./src/app/components/assigment-cmp-databinding/assigment-cmp-databinding.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"answer\">\r\n    <div class=\"col-xs-5\">\r\n        <h4>Assigment 4 - Databinding</h4>\r\n        <app-game-control (intervalFired)=\"onIntervalFired($event)\"></app-game-control>\r\n        <div class=\"col-xs-3\">\r\n            <app-odd *ngFor=\"let oddNumber of oddNumbers\">\r\n                <p class=\"odd\">{{ oddNumber }} is odd</p>\r\n            </app-odd>\r\n        </div>\r\n        <div class=\"col-xs-3\">\r\n            <app-even *ngFor=\"let evenNumber of evenNumbers\">\r\n                <p class=\"even\">{{ evenNumber }} is even</p>\r\n            </app-even>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-xs-7\">\r\n        <h3>Bind it!</h3>\r\n        <ol>\r\n            <li>Create three new components: GameControl, Odd and Even</li>\r\n            <li>The GameControl Component should have buttons to start and stop the game</li>\r\n            <li>When starting the game, an event (holding a incrementing number) should get emitted each second (ref = setInterval())</li>\r\n            <li>The event should be listenable from outside the component</li>\r\n            <li>When stopping the game, no more events should get emitted (clearInterval(ref))</li>\r\n            <li>A new Odd component should get created for every odd number emitted, the same should happen for the Even Component (on even numbers)</li>\r\n            <li>Simply output Odd - NUMBER or Even - NUMBER in the two components</li>\r\n            <li>Style the element (e.g. paragraph) holding your output text differently in both components</li>\r\n        </ol>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"answer\">\r\n    <div [ngStyle]=\"{'text-align': 'center', 'margin-bottom': '2em'}\">\r\n        <h2>Assigment 4. Databinding</h2>\r\n    </div>\r\n    <div class=\"col-xs-5\">\r\n        <app-game-control (intervalFired)=\"onIntervalFired($event)\"></app-game-control>\r\n        <div class=\"col-xs-3\">\r\n            <app-odd *ngFor=\"let oddNumber of oddNumbers\">\r\n                <p class=\"odd\">{{ oddNumber }} is odd</p>\r\n            </app-odd>\r\n        </div>\r\n        <div class=\"col-xs-3\">\r\n            <app-even *ngFor=\"let evenNumber of evenNumbers\">\r\n                <p class=\"even\">{{ evenNumber }} is even</p>\r\n            </app-even>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-xs-7\">\r\n        <h3>Bind it!</h3>\r\n        <ol>\r\n            <li>Create three new components: GameControl, Odd and Even</li>\r\n            <li>The GameControl Component should have buttons to start and stop the game</li>\r\n            <li>When starting the game, an event (holding a incrementing number) should get emitted each second (ref = setInterval())</li>\r\n            <li>The event should be listenable from outside the component</li>\r\n            <li>When stopping the game, no more events should get emitted (clearInterval(ref))</li>\r\n            <li>A new Odd component should get created for every odd number emitted, the same should happen for the Even Component (on even numbers)</li>\r\n            <li>Simply output Odd - NUMBER or Even - NUMBER in the two components</li>\r\n            <li>Style the element (e.g. paragraph) holding your output text differently in both components</li>\r\n        </ol>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -392,7 +409,7 @@ var OddComponent = /** @class */ (function () {
 /***/ "./src/app/components/basic-assigment-1/basic-assigment-1.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"answer\">\r\n  <div class=\"col-xs-3\">\r\n    <h4>Basic assigment 1</h4>\r\n      <h5>Messages:</h5>\r\n      <app-success-alert></app-success-alert>\r\n      <app-warning-alert></app-warning-alert>\r\n    </div>\r\n\r\n  <div class=\"col-xs-9\">\r\n    <ol>\r\n      <li>Create two new Components (manually or with CLI): WarningAlert and SuccessAlert</li>\r\n      <li>Output them beneath each other in the AppComponent</li>\r\n      <li>Output a warning or success message in the Components</li>\r\n      <li>Style the Components appropriately (maybe some red/ green text?)</li>\r\n    </ol>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"answer\">\r\n    <div [ngStyle]=\"{'text-align': 'center', 'margin-bottom': '2em'}\">\r\n        <h2>Basic assigment 1.</h2>\r\n    </div>\r\n    <div class=\"col-xs-3\">\r\n        <h5>Messages:</h5>\r\n        <app-success-alert></app-success-alert>\r\n        <app-warning-alert></app-warning-alert>\r\n    </div>\r\n\r\n    <div class=\"col-xs-9\">\r\n        <ol>\r\n            <li>Create two new Components (manually or with CLI): WarningAlert and SuccessAlert</li>\r\n            <li>Output them beneath each other in the AppComponent</li>\r\n            <li>Output a warning or success message in the Components</li>\r\n            <li>Style the Components appropriately (maybe some red/ green text?)</li>\r\n        </ol>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -507,7 +524,7 @@ var WarningAlertComponent = /** @class */ (function () {
 /***/ "./src/app/components/basic-assigment-2/basic-assigment-2.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"answer\">\r\n  <div class=\"col-xs-3\">\r\n    <h4>Basic assigment 2</h4>\r\n    <h5>Reset Password:</h5>\r\n    <label for=\"username\">Username: {{ username }}</label>\r\n    <input \r\n    type=\"text\" \r\n    class=\"form-control\" \r\n    [(ngModel)]=\"username\">\r\n    <button \r\n    class=\"btn btn-primary\" \r\n    [disabled]=\"usernameIsEmpty()\" \r\n    (click)=\"onResetPassword()\">\r\n      Reset password</button>\r\n    <p>{{ message }}</p>\r\n  </div>\r\n  <div class=\"col-xs-9\">\r\n    <ol>\r\n      <li>Add a Input field which updates a property ('username') via Two-Way-Binding</li>\r\n      <li>Output the username property via String Interpolation (in a paragraph below the input)</li>\r\n      <li>Add a button which may only be clicked if the username is NOT an empty string</li>\r\n      <li>Upon clicking the button, the username should be reset to an empty string</li>\r\n    </ol>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"answer\">\r\n    <div [ngStyle]=\"{'text-align': 'center', 'margin-bottom': '2em'}\">\r\n        <h2>Basic assigment 2.</h2>\r\n    </div>\r\n    <div class=\"col-xs-3\">\r\n        <h5>Reset Password:</h5>\r\n        <label for=\"username\">Username: {{ username }}</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\">\r\n        <button class=\"btn btn-primary\" [disabled]=\"usernameIsEmpty()\" (click)=\"onResetPassword()\">\r\n      Reset password</button>\r\n        <p>{{ message }}</p>\r\n    </div>\r\n    <div class=\"col-xs-9\">\r\n        <ol>\r\n            <li>Add a Input field which updates a property ('username') via Two-Way-Binding</li>\r\n            <li>Output the username property via String Interpolation (in a paragraph below the input)</li>\r\n            <li>Add a button which may only be clicked if the username is NOT an empty string</li>\r\n            <li>Upon clicking the button, the username should be reset to an empty string</li>\r\n        </ol>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -568,7 +585,7 @@ module.exports = ".logs{\r\n    width : 250px;\r\n}\r\n\r\n.white{\r\n    color:
 /***/ "./src/app/components/basic-assigment-3/basic-assigment-3.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"answer\">\r\n    <div class=\"col-xs-3\">\r\n  <h4>Basic assigment 3</h4>\r\n  <button\r\n  class=\"btn btn-primary\"\r\n  (click)=\"onDisplayDetails()\"\r\n  >{{ displayDetailsButtonLabel }}</button>\r\n  <div class=\"logs\" *ngIf=\"displayDetails\">\r\n    <p \r\n    *ngFor=\"let log of logs\"\r\n    [ngStyle]=\"{backgroundColor: getColor()}\"\r\n    [ngClass]=\"{white : ifLogsLength(5)}\">\r\n    {{ log }}</p>\r\n  </div>\r\n  </div>\r\n  <div class=\"col-xs-8\">\r\n    <ol>\r\n      <li>Add A button which says 'Display Details'</li>\r\n      <li>Add a paragraph with any content of your choice (e.g. 'Secret Password = tuna')</li>\r\n      <li>Toggle the displaying of that paragraph with the button created in the first step</li>\r\n      <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number)</li>\r\n      <li>Starting at the 5th log item, give all future log items \r\n        a blue background (via ngStyle) and white color (ngClass)</li>\r\n    </ol>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"answer\">\r\n    <div [ngStyle]=\"{'text-align': 'center', 'margin-bottom': '2em'}\">\r\n        <h2>Basic assigment 3.</h2>\r\n    </div>\r\n    <div class=\"col-xs-3\">\r\n  <button\r\n  class=\"btn btn-primary\"\r\n  (click)=\"onDisplayDetails()\"\r\n  >{{ displayDetailsButtonLabel }}</button>\r\n  <div class=\"logs\" *ngIf=\"displayDetails\">\r\n    <p \r\n    *ngFor=\"let log of logs\"\r\n    [ngStyle]=\"{backgroundColor: getColor()}\"\r\n    [ngClass]=\"{white : ifLogsLength(5)}\">\r\n    {{ log }}</p>\r\n  </div>\r\n  </div>\r\n  <div class=\"col-xs-8\">\r\n    <ol>\r\n      <li>Add A button which says 'Display Details'</li>\r\n      <li>Add a paragraph with any content of your choice (e.g. 'Secret Password = tuna')</li>\r\n      <li>Toggle the displaying of that paragraph with the button created in the first step</li>\r\n      <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number)</li>\r\n      <li>Starting at the 5th log item, give all future log items \r\n        a blue background (via ngStyle) and white color (ngClass)</li>\r\n    </ol>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -928,14 +945,14 @@ var ServerComponent = /** @class */ (function () {
 /***/ "./src/app/components/server-console-1/servers-console/servers-console.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "h3 {\r\n    font-weight: bold;\r\n}"
+module.exports = ""
 
 /***/ }),
 
 /***/ "./src/app/components/server-console-1/servers-console/servers-console.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <h3>Servers console</h3>\r\n  <app-servers></app-servers>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n  <div [ngStyle]=\"{'text-align': 'center'}\">\r\n    <h2>Servers console 1. </h2>\r\n  </div>\r\n  <app-servers></app-servers>\r\n</div>"
 
 /***/ }),
 
@@ -1132,7 +1149,7 @@ module.exports = ".container {\r\n    margin-top: 30px;\r\n}\r\n\r\np {\r\n    c
 /***/ "./src/app/components/server-console-2/server-console-2.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <app-cockpit (serverCreated)=\"onServerAdded($event)\" (bpCreated)=\"onBlueprintAdded($event)\"></app-cockpit>\r\n    <hr>\r\n    <div class=\"row\">\r\n        <div class=\"col-xs-12\">\r\n            <button class=\"btn btn-primary\" (click)=\"onChangeFirst()\">Change first element</button>\r\n            <button class=\"btn btn-danger\" (click)=\"onDestroyFirst()\">Destroy first element</button>\r\n            <app-server-element *ngFor=\"let serverElement of serverElements\" [srvElement]=\"serverElement\">\r\n                <p #contentParagraph>\r\n                    <strong *ngIf=\"serverElement.type === 'server'\" style=\"color: red\">{{ serverElement.content }}</strong>\r\n                    <em *ngIf=\"serverElement.type === 'blueprint'\" style=\"color: blue\">{{ serverElement.content }}</em>\r\n                </p>\r\n            </app-server-element>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <div [ngStyle]=\"{'text-align': 'center'}\">\r\n        <h2>Servers console 2. </h2>\r\n    </div>\r\n    <app-cockpit (serverCreated)=\"onServerAdded($event)\" (bpCreated)=\"onBlueprintAdded($event)\"></app-cockpit>\r\n    <hr>\r\n    <div class=\"row\">\r\n        <div class=\"col-xs-12\">\r\n            <button class=\"btn btn-primary\" (click)=\"onChangeFirst()\">Change first element</button>\r\n            <button class=\"btn btn-danger\" (click)=\"onDestroyFirst()\">Destroy first element</button>\r\n            <app-server-element *ngFor=\"let serverElement of serverElements\" [srvElement]=\"serverElement\">\r\n                <p #contentParagraph>\r\n                    <strong *ngIf=\"serverElement.type === 'server'\" style=\"color: red\">{{ serverElement.content }}</strong>\r\n                    <em *ngIf=\"serverElement.type === 'blueprint'\" style=\"color: blue\">{{ serverElement.content }}</em>\r\n                </p>\r\n            </app-server-element>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -1269,6 +1286,470 @@ var ServerElementComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ServerElementComponent);
     return ServerElementComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/services-assigment/active-users/active-users.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h3>Active Users</h3>\n<ul class=\"list-group\">\n  <li\n    class=\"list-group-item\"\n    *ngFor=\"let user of users; let i = index\">\n    {{ user }} | <a href=\"#\" (click)=\"onSetToInactive(i)\">Set to Inactive</a>\n  </li>\n</ul>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/services-assigment/active-users/active-users.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActiveUsersComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_users_service__ = __webpack_require__("./src/app/components/services-assigment/services/users.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ActiveUsersComponent = /** @class */ (function () {
+    function ActiveUsersComponent(usersService) {
+        this.usersService = usersService;
+    }
+    ActiveUsersComponent.prototype.onSetToInactive = function (id) {
+        this.usersService.inactiveUser(id);
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Input */])(),
+        __metadata("design:type", Array)
+    ], ActiveUsersComponent.prototype, "users", void 0);
+    ActiveUsersComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'app-active-users',
+            template: __webpack_require__("./src/app/components/services-assigment/active-users/active-users.component.html")
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_users_service__["a" /* UsersService */]])
+    ], ActiveUsersComponent);
+    return ActiveUsersComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/services-assigment/inactive-users/inactive-users.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h3>Inactive Users</h3>\n<ul class=\"list-group\">\n  <li\n    class=\"list-group-item\"\n    *ngFor=\"let user of users; let i = index\">\n    {{ user }} | <a href=\"#\" (click)=\"onSetToActive(i)\">Set to Active</a>\n  </li>\n</ul>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/services-assigment/inactive-users/inactive-users.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InactiveUsersComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_users_service__ = __webpack_require__("./src/app/components/services-assigment/services/users.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var InactiveUsersComponent = /** @class */ (function () {
+    function InactiveUsersComponent(usersService) {
+        this.usersService = usersService;
+    }
+    InactiveUsersComponent.prototype.onSetToActive = function (id) {
+        this.usersService.activeUser(id);
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Input */])(),
+        __metadata("design:type", Array)
+    ], InactiveUsersComponent.prototype, "users", void 0);
+    InactiveUsersComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'app-inactive-users',
+            template: __webpack_require__("./src/app/components/services-assigment/inactive-users/inactive-users.component.html")
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_users_service__["a" /* UsersService */]])
+    ], InactiveUsersComponent);
+    return InactiveUsersComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/services-assigment/services-assigment.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ".intro{\r\n  text-align: center;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/components/services-assigment/services-assigment.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n    <div class=\"intro\">\n        <h2>Services Assigment</h2>\n        <p>Open console (F5) to see more</p>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-xs-12 col-md-8 col-md-offset-2\">\n            <app-active-users [users]=\"activeUsers\"></app-active-users>\n            <app-inactive-users [users]=\"inactiveUsers\"></app-inactive-users>\n        </div>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/services-assigment/services-assigment.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServicesAssigmentComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_users_service__ = __webpack_require__("./src/app/components/services-assigment/services/users.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_counter_service__ = __webpack_require__("./src/app/components/services-assigment/services/counter.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ServicesAssigmentComponent = /** @class */ (function () {
+    function ServicesAssigmentComponent(usersService) {
+        this.usersService = usersService;
+    }
+    ServicesAssigmentComponent.prototype.ngOnInit = function () {
+        this.activeUsers = this.usersService.activeUsers;
+        this.inactiveUsers = this.usersService.inactiveUsers;
+    };
+    ServicesAssigmentComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'app-services-assigment',
+            template: __webpack_require__("./src/app/components/services-assigment/services-assigment.component.html"),
+            styles: [__webpack_require__("./src/app/components/services-assigment/services-assigment.component.css")],
+            providers: [__WEBPACK_IMPORTED_MODULE_1__services_users_service__["a" /* UsersService */], __WEBPACK_IMPORTED_MODULE_2__services_counter_service__["a" /* CounterService */]]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_users_service__["a" /* UsersService */]])
+    ], ServicesAssigmentComponent);
+    return ServicesAssigmentComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/services-assigment/services/counter.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CounterService; });
+var CounterService = /** @class */ (function () {
+    function CounterService() {
+        this.activationCounter = 0;
+        this.inactivationCounter = 0;
+    }
+    CounterService.prototype.addActivation = function () {
+        this.activationCounter += 1;
+        console.log("Activation actions: " + this.activationCounter);
+    };
+    CounterService.prototype.addInactivation = function () {
+        this.inactivationCounter += 1;
+        console.log("Inactivation actions: " + this.inactivationCounter);
+    };
+    return CounterService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/services-assigment/services/users.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsersService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__counter_service__ = __webpack_require__("./src/app/components/services-assigment/services/counter.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var UsersService = /** @class */ (function () {
+    function UsersService(counterService) {
+        this.counterService = counterService;
+        this.activeUsers = ['Max', 'Anna'];
+        this.inactiveUsers = ['Chris', 'Manu'];
+    }
+    UsersService.prototype.inactiveUser = function (id) {
+        this.inactiveUsers.push(this.activeUsers[id]);
+        this.activeUsers.splice(id, 1);
+        this.counterService.addActivation();
+    };
+    UsersService.prototype.activeUser = function (id) {
+        this.activeUsers.push(this.inactiveUsers[id]);
+        this.inactiveUsers.splice(id, 1);
+        this.counterService.addInactivation();
+    };
+    UsersService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["z" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__counter_service__["a" /* CounterService */]])
+    ], UsersService);
+    return UsersService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/services/account/account.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ".row {\n    border: 1px solid #ccc;\n    margin: 10px 0;\n    padding: 10px 0;\n}"
+
+/***/ }),
+
+/***/ "./src/app/components/services/account/account.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\n    <div class=\"col-xs-12 col-md-8 col-md-offset-2\">\n        <h5>{{ account.name }}</h5>\n        <hr>\n        <p>This account is {{ account.status }}</p>\n        <button class=\"btn btn-default\" (click)=\"onSetTo('active')\">Set to 'active'</button>\n        <button class=\"btn btn-default\" (click)=\"onSetTo('inactive')\">Set to 'inactive'</button>\n        <button class=\"btn btn-default\" (click)=\"onSetTo('unknown')\">Set to 'unknown'</button>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/services/account/account.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__accounts_service__ = __webpack_require__("./src/app/components/services/accounts.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AccountComponent = /** @class */ (function () {
+    function AccountComponent(accountService) {
+        this.accountService = accountService;
+    }
+    AccountComponent.prototype.onSetTo = function (status) {
+        this.accountService.updateStatus(this.id, status);
+        this.accountService.statusUpdated.emit(status);
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Input */])(),
+        __metadata("design:type", Object)
+    ], AccountComponent.prototype, "account", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Input */])(),
+        __metadata("design:type", Number)
+    ], AccountComponent.prototype, "id", void 0);
+    AccountComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'app-account',
+            template: __webpack_require__("./src/app/components/services/account/account.component.html"),
+            styles: [__webpack_require__("./src/app/components/services/account/account.component.css")],
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__accounts_service__["a" /* AccountsService */]])
+    ], AccountComponent);
+    return AccountComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/services/accounts.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountsService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__logging_service__ = __webpack_require__("./src/app/components/services/logging.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+//metadata is needed when you want to suse service in another service  (LoggingService in the AccountsService)
+//@Injectable() -> this way you show this sth can be injected in here
+var AccountsService = /** @class */ (function () {
+    function AccountsService(loggingService) {
+        this.loggingService = loggingService;
+        this.accounts = [
+            {
+                name: 'Master Account',
+                status: 'active'
+            }
+        ];
+        this.statusUpdated = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* EventEmitter */]();
+    }
+    AccountsService.prototype.addAccount = function (name, status) {
+        this.accounts.push({ name: name, status: status });
+        this.loggingService.logStatusChange(status);
+    };
+    AccountsService.prototype.updateStatus = function (id, status) {
+        this.accounts[id].status = status;
+        this.loggingService.logStatusChange(status);
+    };
+    AccountsService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["z" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__logging_service__["a" /* LoggingService */]])
+    ], AccountsService);
+    return AccountsService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/services/logging.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoggingService; });
+var LoggingService = /** @class */ (function () {
+    function LoggingService() {
+    }
+    LoggingService.prototype.logStatusChange = function (status) {
+        console.log('A server status changed, new status: ' + status);
+    };
+    return LoggingService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/services/new-account/new-account.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\n    <div class=\"col-xs-12 col-md-8 col-md-offset-2\">\n        <div class=\"form-group\">\n            <label>Account Name</label>\n            <input type=\"text\" class=\"form-control\" #accountName>\n        </div>\n        <div class=\"form-group\">\n            <select class=\"form-control\" #status>\n        <option value=\"active\">Active</option>\n        <option value=\"inactive\">Inactive</option>\n        <option value=\"hidden\">Hidden</option>\n      </select>\n        </div>\n        <button class=\"btn btn-primary\" (click)=\"onCreateAccount(accountName.value, status.value)\">\n      Add Account\n    </button>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/services/new-account/new-account.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewAccountComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__accounts_service__ = __webpack_require__("./src/app/components/services/accounts.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var NewAccountComponent = /** @class */ (function () {
+    function NewAccountComponent(accountService) {
+        this.accountService = accountService;
+        this.accountService.statusUpdated.subscribe(function (status) { return alert('New Status: ' + status); });
+    }
+    NewAccountComponent.prototype.onCreateAccount = function (accountName, accountStatus) {
+        this.accountService.addAccount(accountName, accountStatus);
+    };
+    NewAccountComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'app-new-account',
+            template: __webpack_require__("./src/app/components/services/new-account/new-account.component.html"),
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__accounts_service__["a" /* AccountsService */]])
+    ], NewAccountComponent);
+    return NewAccountComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/services/services.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ".intro{\r\n    text-align: center;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/components/services/services.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n    <div class=\"intro\">\n        <h2>Services</h2>\n        <p>Open console (F5) to see more</p>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-xs-12 col-md-8 col-md-offset-2\">\n            <app-new-account></app-new-account>\n            <hr>\n            <app-account *ngFor=\"let acc of accounts; let i = index\" [account]=\"acc\" [id]=\"i\"></app-account>\n        </div>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/services/services.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServicesComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__accounts_service__ = __webpack_require__("./src/app/components/services/accounts.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__logging_service__ = __webpack_require__("./src/app/components/services/logging.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ServicesComponent = /** @class */ (function () {
+    function ServicesComponent(accountsService) {
+        this.accountsService = accountsService;
+        this.accounts = [];
+    }
+    ServicesComponent.prototype.ngOnInit = function () {
+        this.accounts = this.accountsService.accounts;
+    };
+    ServicesComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'app-services',
+            template: __webpack_require__("./src/app/components/services/services.component.html"),
+            styles: [__webpack_require__("./src/app/components/services/services.component.css")],
+            providers: [__WEBPACK_IMPORTED_MODULE_1__accounts_service__["a" /* AccountsService */], __WEBPACK_IMPORTED_MODULE_2__logging_service__["a" /* LoggingService */]]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__accounts_service__["a" /* AccountsService */]])
+    ], ServicesComponent);
+    return ServicesComponent;
 }());
 
 
